@@ -1,0 +1,19 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="Y*[@m=-1DM5[^C3kxD._">termometar</variable></variables><block type="device_forever" id="gL{M{9AS}R^]z-6_EI|(" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="}@Vj-m3_]OMwlpr{ixLW"><field name="VAR" id="Y*[@m=-1DM5[^C3kxD._">termometar</field><value name="VALUE"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="device_temperature" id="Cb2*8ov.T;|2BymsQNlQ"></block></value><next><block type="controls_if" id="O?(loThvKQ:J8X,w!t)P"><mutation elseif="1" else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="35U2o_D2RHSDk[[4^?Dr"><field name="OP">LT</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id="v6f#He=MQE*BI1$hB^X`"><field name="VAR" id="Y*[@m=-1DM5[^C3kxD._">termometar</field></block></value><value name="B"><shadow type="math_number" id="8lzB?WN3.M}|xG+Hi[.m"><field name="NUM">19</field></shadow></value></block></value><statement name="DO0"><block type="device_show_leds" id="sd4_mfaT/Q^3tl,o@ZG_"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        . # # # . 
+        . . # . .
+        `</field></block></statement><value name="IF1"><block type="logic_operation" id="z$rhxmCc2~-4jS_+V{pH"><field name="OP">AND</field><value name="A"><block type="logic_compare" id="{3ue7lw}r}zqm@lMc`vv"><field name="OP">GTE</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="~m)h4)1buuZ[J(5DCWVC"><field name="VAR" id="Y*[@m=-1DM5[^C3kxD._">termometar</field></block></value><value name="B"><shadow type="math_number" id="J_9k=fDsUeJ~x?W)Dj)h"><field name="NUM">19</field></shadow></value></block></value><value name="B"><block type="logic_compare" id="=o@cQ|ywJa5dty{k[~@u"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="oNMNmSn0uofxWbOT9)Yd"><field name="VAR" id="Y*[@m=-1DM5[^C3kxD._">termometar</field></block></value><value name="B"><shadow type="math_number" id="nOGk=w?.jwKAHW|j}Nk;"><field name="NUM">22</field></shadow></value></block></value></block></value><statement name="DO1"><block type="device_show_leds" id="wzdT%/Z7`=dUW!QFTNbX"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        . . . . . 
+        . . . . .
+        `</field></block></statement><statement name="ELSE"><block type="device_show_leds" id="EQA]`Zd|`oQL~#v/o14p"><field name="LEDS">`
+        . . # . . 
+        . # # # . 
+        # # # # # 
+        . . . . . 
+        . . . . .
+        `</field></block></statement></block></next></block></statement></block><block type="variables_get" id="!3!WIq:!`Kj~?~VfId|v" disabled="true" x="600" y="182"><field name="VAR" id="Y*[@m=-1DM5[^C3kxD._">termometar</field></block><block type="device_button_event" id="9iz*.i;@|yy?6+_wp@/}" x="459" y="716"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_clear_display" id=".BXoB//3-Yq:Q?iQ2_iq"><next><block type="device_show_number" id="8|F77!*/JmM|P6cQB|?!"><value name="number"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_temperature" id="PSmaZ{olz9|3zx91S2r("></block></value><next><block type="device_pause" id="J=gu}[_5(2Mc;}wk$j;}"><value name="pause"><shadow type="timePicker" id="Kiqj1K0B|Ci2kF1K1)6-"><field name="ms">500</field></shadow></value></block></next></block></next></block></statement></block></xml>
